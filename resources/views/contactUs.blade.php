@@ -12,7 +12,7 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Get In touch
+        {{__('contact.getInTouch')}}
         </h2>
       </div>
       <div class="">
@@ -22,20 +22,20 @@
               <div class="contact_form-container">
                 <div>
                   <div>
-                    <input type="text" placeholder="Full Name" />
+                    <input type="text" placeholder="{{__('contact.name')}}" />
                   </div>
                   <div>
-                    <input type="email" placeholder="Email " />
+                    <input type="email" placeholder="{{__('contact.email')}} " />
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number" />
+                    <input type="text" placeholder="{{__('contact.phone')}}" />
                   </div>
                   <div class="">
-                    <input type="text" placeholder="Message" class="message_input" />
+                    <input type="text" placeholder="{{__('contact.message')}}" class="message_input" />
                   </div>
                   <div class="btn-box ">
                     <button type="submit">
-                      Send
+                    {{__('contact.send')}}
                     </button>
                   </div>
                 </div>

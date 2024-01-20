@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="info_logo">
-            <a class="navbar-brand" href="{{ route('home')}}">
+            <a class="navbar-brand" href="{{ route('testhome')}}">
               <span>
                 Guarder
               </span>
@@ -17,7 +17,7 @@
         <div class="col-md-3">
           <div class="info_links">
             <h5>
-              Useful Link
+              {{__('contact.UsefulLink')}}
             </h5>
             <ul>
               <li>
@@ -46,7 +46,7 @@
         <div class="col-md-3">
           <div class="info_info">
             <h5>
-              Contact Us
+            {{__('contact.contactUs')}}
             </h5>
           </div>
           <div class="info_contact">
@@ -73,12 +73,12 @@
         <div class="col-md-3">
           <div class="info_form ">
             <h5>
-              Newsletter
+              {{__('contact.Newsletter')}}
             </h5>
             <form action="#">
-              <input type="email" placeholder="Enter your email">
+              <input type="email" placeholder="{{__('contact.enteryouremail')}}">
               <button>
-                Subscribe
+              {{__('contact.Subscribe')}}
               </button>
             </form>
             <div class="social_box">

@@ -35,7 +35,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('testhome') }}">
               <span>
                 Guarder
               </span>
@@ -47,7 +47,7 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item ">
-                  <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ route('testhome') }}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                   <a class="nav-link" href="{{ route('about') }}"> About</a>

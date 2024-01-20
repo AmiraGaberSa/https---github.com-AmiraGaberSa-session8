@@ -13,7 +13,7 @@
             <a href="" class="contact_link1">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
               <span>
-                Lorem ipsum dolor sit amet,
+              {{__('contact.Lore')}}
               </span>
             </a>
             <a href="" class="contact_link2">
@@ -34,7 +34,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('testhome') }}">
               <span>
                 Guarder
               </span>
@@ -46,19 +46,25 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
               <ul class="navbar-nav  ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="{{ route('home') }}">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="{{ route('testhome') }}">{{__('contact.home')}} <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('about') }}"> About</a>
+                  <a class="nav-link" href="{{ route('about') }}"> {{__('contact.about')}}</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('service') }}"> Services </a>
+                  <a class="nav-link" href="{{ route('service') }}"> {{__('contact.services')}} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('guard') }}"> Guards </a>
+                  <a class="nav-link" href="{{ route('guard') }}"> {{__('contact.guards')}} </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ route('contactUs') }}">Contact us</a>
+                  <a class="nav-link" href="{{ route('contactUs') }}">{{__('contact.contactUs')}}</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('en') }}">English</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ LaravelLocalization::getLocalizedURL('ar') }}">عربي</a>
                 </li>
               </ul>
             </div>

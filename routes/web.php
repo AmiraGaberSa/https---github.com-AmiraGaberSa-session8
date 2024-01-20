@@ -23,8 +23,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+    ], function(){
 //Routs for home section
-Route::get('home',[HomeController::class,'index'])->name('home');
+Route::get('testhome',[HomeController::class,'index'])->name('testhome');
 
 //Routs for about section
 Route::get('about',[AboutController::class,'index'])->name('about');
@@ -37,9 +43,14 @@ Route::get('guard',[GuardController::class,'index'])->name('guard');
 
 //Routs for contactUs section
 Route::get('contactUs',[ContactController::class,'index'])->name('contactUs');
+   
+});
 
 
 
 
 
 
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('testhome');
